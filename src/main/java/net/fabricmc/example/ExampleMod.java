@@ -15,6 +15,7 @@ public class ExampleMod implements ModInitializer {
 	// HOLY COW!!!!
 	// HOLY COW X2 !!!!!
 	// HOLY COW X3 !!!!!
+	// HOLY COW X4 !!!!!
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
