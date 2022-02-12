@@ -10,6 +10,7 @@ public class ExampleMod implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
 	
+	// WHAT THE FUCK RAT!!!!!!
 	// WHAT THE FUCK GRAT!!!!!!
 	// HOLY COW!!!!
 	// HOLY COW X2 !!!!!
