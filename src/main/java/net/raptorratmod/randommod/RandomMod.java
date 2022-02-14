@@ -14,6 +14,7 @@ public class RandomMod implements ModInitializer {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	//This Should be viewable and should be in package net.raptorratmod.randommod
+	// YOOOOOOOOOOO
 
 	@Override
 	public void onInitialize() {
