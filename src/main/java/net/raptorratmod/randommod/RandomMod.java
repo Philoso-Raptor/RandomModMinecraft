@@ -13,7 +13,8 @@ public class RandomMod implements ModInitializer {
 	public static final String MOD_ID = "randommod";
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-//This Should be viewable and should be in package net.raptorratmod.randommod
+	//This Should be viewable and should be in package net.raptorratmod.randommod
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
