@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
+  "parent": "block/cube_all",
   "textures": {
-    "layer0": "randommod:item/osmantium_ore"
+    "layer0": "randommod:block/osmantium_ore"
   }
 }
