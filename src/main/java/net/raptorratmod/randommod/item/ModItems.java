@@ -14,7 +14,6 @@ public class ModItems {
     public static final Item OSMANTIUM_NUGGET = registerItem("osmantium_nugget"
             ,new Item(new FabricItemSettings().fireproof().group(ItemGroup.MISC)));
 
-
     public static final Item OSMANTIUM_DUST = registerItem("osmantium_dust"
             ,new Item(new FabricItemSettings().fireproof().group(ItemGroup.MISC)));
 
