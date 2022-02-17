@@ -17,6 +17,9 @@ public class ModItems {
     public static final Item OSMANTIUM_DUST = registerItem("osmantium_dust"
             ,new Item(new FabricItemSettings().fireproof().group(ItemGroup.MISC)));
 
+    public static final Item JJ_PIZZA = registerItem("jj_pizza"
+            ,new Item(new FabricItemSettings().food(ModFoodComponents.JJ_PIZZA).group(ItemGroup.FOOD)));
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(RandomMod.MOD_ID, name), item);
