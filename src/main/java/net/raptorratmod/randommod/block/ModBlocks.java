@@ -25,7 +25,7 @@ public class ModBlocks {
     }
 
     public static Item registerBlockItem(String name, Block block, ItemGroup group ){
-        return Registry.register(Registry.ITEM, new Identifier(RandomMod.MOD_ID, name),
+        return Registry.register(Registry.ITEM, new Identifier(RandomMod.MOD_ID, name),//<-- you forgot to put name, it took like 2 hours to find this
                 new BlockItem(block, new FabricItemSettings().group(group)));
     }
 
