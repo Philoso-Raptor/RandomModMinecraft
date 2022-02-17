@@ -10,13 +10,13 @@ import net.minecraft.util.Identifier;
 import net.raptorratmod.randommod.RandomMod;
 import net.minecraft.util.registry.Registry;
 import net.raptorratmod.randommod.item.ModItems;
-public class modblocks {
+public class ModBlocks {
 
     public static final Block OSMANTIUM_ORE = registerBlock("osmantium_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ItemGroup.MISC);
 
-    public static final Block OSMANTIUM_BLOCK = registerBlock("osmantium_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.MISC);
+    //public static final Block OSMANTIUM_BLOCK = registerBlock("osmantium_block",
+    //        new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.MISC);
 
 
     public static Block registerBlock(String name, Block block, ItemGroup group){
@@ -25,7 +25,7 @@ public class modblocks {
     }
 
     public static Item registerBlockItem(String name, Block block, ItemGroup group ){
-        return Registry.register(Registry.ITEM, new Identifier(RandomMod.MOD_ID),
+        return Registry.register(Registry.ITEM, new Identifier(RandomMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(group)));
     }
 

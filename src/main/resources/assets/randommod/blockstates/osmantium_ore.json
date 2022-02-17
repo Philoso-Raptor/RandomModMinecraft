@@ -1,6 +1,5 @@
 {
   "variants": {
-    "": {"models": "RandomMod:block/osmantium_ore"
-  }
+    "": { "model": "randommod:block/osmantium_ore" }
   }
 }

@@ -1,6 +1,3 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "layer0": "randommod:block/osmantium_ore"
-  }
+  "parent": "randommod:block/osmantium_ore"
 }
