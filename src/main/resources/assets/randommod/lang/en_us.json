@@ -6,5 +6,6 @@
 
   "block.randommod.osmantium_ore": "Osmantium Ore",
 
-  "effect.randommod.bleed": "Bleed"
+  "effect.randommod.bleed": "Bleed",
+  "effect.randommod.infected": "Infected"
 }

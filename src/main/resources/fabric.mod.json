@@ -20,9 +20,6 @@
   "entrypoints": {
     "main": [
       "net.raptorratmod.randommod.RandomMod"
-    ],
-    "client": [
-      "net.raptorratmod.client.EntityTestingClient"
     ]
   },
   "mixins": [

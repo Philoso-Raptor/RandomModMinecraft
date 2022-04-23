@@ -28,6 +28,11 @@ public class RandomMod implements ModInitializer {
 		ModBlocks.registerModBlock();
 		ModEffects.registerEffects();
 
+
 		LOGGER.info("Hello Fabric world!");
 	}
+
+
+
+
 }
