@@ -15,6 +15,6 @@ public class ModEntities {
     public static final EntityType<JJEntity> JJ = Registry.register(
             Registry.ENTITY_TYPE, new Identifier(RandomMod.MOD_ID, "jj"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, JJEntity::new)
-                    .dimensions(EntityDimensions.fixed(1.0f, 0.8f)).build());
+                    .dimensions(EntityDimensions.fixed(1.0f, 2.0f)).build());
 }
 

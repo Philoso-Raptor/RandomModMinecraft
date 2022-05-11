@@ -41,7 +41,7 @@ public class JJEntity extends AnimalEntity implements IAnimatable {
                 .add(EntityAttributes.GENERIC_MAX_HEALTH,20.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,8.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED,2.0f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED,0.7f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED,0.5f);
     }
 
     protected void initGoals(){

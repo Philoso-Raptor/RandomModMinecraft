@@ -10,12 +10,12 @@ import software.bernie.geckolib3.model.provider.data.EntityModelData;
 public class JJModel extends AnimatedGeoModel<JJEntity> {
     @Override
     public Identifier getModelLocation(JJEntity object) {
-        return new Identifier(RandomMod.MOD_ID,"geo/JJ.geo.json");
+        return new Identifier(RandomMod.MOD_ID,"geo/jj.geo.json");
     }
 
     @Override
     public Identifier getTextureLocation(JJEntity object) {
-        return new Identifier(RandomMod.MOD_ID,"textures/entity/jj/JJ_Texture.png");
+        return new Identifier(RandomMod.MOD_ID,"textures/entity/jj/jjtexture.png");
     }
 
     @Override

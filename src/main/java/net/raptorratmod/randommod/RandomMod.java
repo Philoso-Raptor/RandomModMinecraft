@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.raptorratmod.randommod.block.ModBlocks;
 import net.raptorratmod.randommod.effect.ModEffects;
 import net.raptorratmod.randommod.item.ModItems;
+import net.raptorratmod.randommod.util.ModRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.geckolib3.GeckoLib;
@@ -29,6 +30,7 @@ public class RandomMod implements ModInitializer {
 		ModBlocks.registerModBlock();
 		ModEffects.registerEffects();
 		GeckoLib.initialize();
+		ModRegistries.registerModStuffs();
 
 
 		LOGGER.info("Hello Fabric world!");

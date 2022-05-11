@@ -14,7 +14,7 @@ public class JJRenderer extends GeoEntityRenderer<JJEntity> {
 
     @Override
     public Identifier getTextureLocation(JJEntity instance){
-        return new Identifier(RandomMod.MOD_ID,"textures/entity/jj/JJ_Texture.png");
+        return new Identifier(RandomMod.MOD_ID,"textures/entity/jj/jjtexture.png");
     }
 
 }
