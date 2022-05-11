@@ -6,6 +6,7 @@ import net.raptorratmod.randommod.effect.ModEffects;
 import net.raptorratmod.randommod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib3.GeckoLib;
 
 public class RandomMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -27,6 +28,7 @@ public class RandomMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
 		ModEffects.registerEffects();
+		GeckoLib.initialize();
 
 
 		LOGGER.info("Hello Fabric world!");

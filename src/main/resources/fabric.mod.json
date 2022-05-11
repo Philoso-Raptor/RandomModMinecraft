@@ -20,7 +20,11 @@
   "entrypoints": {
     "main": [
       "net.raptorratmod.randommod.RandomMod"
+    ],
+    "client": [
+      "net.raptorratmod.randommod.RandomClientMod"
     ]
+
   },
   "mixins": [
     "randommod.mixin.json"
