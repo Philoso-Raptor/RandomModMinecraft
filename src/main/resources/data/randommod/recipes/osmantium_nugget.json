@@ -1,7 +1,6 @@
 
 {
   "type": "minecraft:smelting",
-  "group": "osmantium_nugget",
   "ingredient": {
     "item": "randommod:osmantium_dust"
   },

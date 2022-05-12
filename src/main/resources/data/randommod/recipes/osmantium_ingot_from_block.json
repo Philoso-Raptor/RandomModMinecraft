@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-
   "ingredients": [
      {
       "item": "randommod:osmantium_nugget"
