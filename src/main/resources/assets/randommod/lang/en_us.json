@@ -3,9 +3,11 @@
   "item.randommod.osmantium_nugget": "Osmantium Nugget",
   "item.randommod.osmantium_dust": "Osmantium Dust",
   "item.randommod.jj_pizza": "JJ's Pizza",
+
   "item.randommod.jj_spawn_egg": "JJ Spawn Egg",
 
   "block.randommod.osmantium_ore": "Osmantium Ore",
+  "block.randommod.dark_splinter": "Dark Splinter",
 
   "effect.randommod.bleed": "Bleed",
   "effect.randommod.infected": "Infected"

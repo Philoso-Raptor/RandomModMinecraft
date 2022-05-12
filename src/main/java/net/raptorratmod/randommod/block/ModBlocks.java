@@ -9,6 +9,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.raptorratmod.randommod.RandomMod;
 import net.minecraft.util.registry.Registry;
+import net.raptorratmod.randommod.block.custom.DarkSplinter;
 import net.raptorratmod.randommod.item.ModItems;
 public class ModBlocks {
 
@@ -17,6 +18,9 @@ public class ModBlocks {
 
     //public static final Block OSMANTIUM_BLOCK = registerBlock("osmantium_block",
     //        new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.MISC);
+
+    public static final Block DARK_SPLINTER = registerBlock("dark_splinter",
+            new DarkSplinter(FabricBlockSettings.of(Material.DECORATION).nonOpaque().strength(8f).requiresTool()), ItemGroup.MISC);
 
 
     public static Block registerBlock(String name, Block block, ItemGroup group){

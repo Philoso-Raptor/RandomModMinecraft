@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": {"model": "randommod:block/dark_splinter", "y": 270},
+    "facing=east": {"model": "randommod:block/dark_splinter", "y": 180},
+    "facing=south": {"model": "randommod:block/dark_splinter", "y": 90},
+    "facing=west": {"model": "randommod:block/dark_splinter"}
+  }
+}

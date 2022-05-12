@@ -24,7 +24,7 @@ public class ModItems {
 
     public static final Item JJ_SPAWN_EGG = registerItem("jj_spawn_egg"
             ,new SpawnEggItem(ModEntities.JJ,0x948e8d, 0x3b3635,
-                    new FabricItemSettings().group(ItemGroup.MISC)));
+                    new FabricItemSettings().group(ItemGroup.MISC).maxCount(1)));
 
 
     private static Item registerItem(String name, Item item){

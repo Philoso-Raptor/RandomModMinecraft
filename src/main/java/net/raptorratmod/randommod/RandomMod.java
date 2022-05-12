@@ -1,6 +1,7 @@
 package net.raptorratmod.randommod;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.item.SpawnEggItem;
 import net.raptorratmod.randommod.block.ModBlocks;
 import net.raptorratmod.randommod.effect.ModEffects;
 import net.raptorratmod.randommod.item.ModItems;
@@ -31,7 +32,6 @@ public class RandomMod implements ModInitializer {
 		ModEffects.registerEffects();
 		GeckoLib.initialize();
 		ModRegistries.registerModStuffs();
-
 
 		LOGGER.info("Hello Fabric world!");
 	}
