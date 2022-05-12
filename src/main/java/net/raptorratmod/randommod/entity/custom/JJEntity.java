@@ -41,17 +41,18 @@ public class JJEntity extends AnimalEntity implements IAnimatable {
                 .add(EntityAttributes.GENERIC_MAX_HEALTH,20.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,2.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED,2.0f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED,0.3f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED,0.5f);
     }
 
     protected void initGoals(){
         this.goalSelector.add(0,new SwimGoal(this));
-        this.goalSelector.add(2,new WanderAroundPointOfInterestGoal(this,0.1f,false));
-        this.goalSelector.add(3,new WanderAroundFarGoal(this,0.1f,1));
+        this.goalSelector.add(1, new EscapeDangerGoal(this, 0.2f));
+        this.goalSelector.add(2,new WanderAroundPointOfInterestGoal(this,0.4f,false));
+        this.goalSelector.add(3,new WanderAroundFarGoal(this,0.4f,2));
         this.goalSelector.add(4,new LookAroundGoal(this));
         this.goalSelector.add(5,new LookAtEntityGoal(this, PlayerEntity.class,8.0f));
-        this.goalSelector.add(1, new EscapeDangerGoal(this, 0.2f));
-        }
+        this.goalSelector.add(6, new AttackGoal(this));
+    }
 
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event){
