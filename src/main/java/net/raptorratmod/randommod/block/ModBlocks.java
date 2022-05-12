@@ -16,8 +16,8 @@ public class ModBlocks {
     public static final Block OSMANTIUM_ORE = registerBlock("osmantium_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ItemGroup.MISC);
 
-    //public static final Block OSMANTIUM_BLOCK = registerBlock("osmantium_block",
-    //        new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.MISC);
+    public static final Block OSMANTIUM_BLOCK = registerBlock("osmantium_block",
+           new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.MISC);
 
     public static final Block DARK_SPLINTER = registerBlock("dark_splinter",
             new DarkSplinter(FabricBlockSettings.of(Material.DECORATION).nonOpaque().strength(8f).requiresTool()), ItemGroup.MISC);

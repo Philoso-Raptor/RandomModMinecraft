@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "radiant_osmantium",
+  "ingredient": {
+    "item": "randommod:dense_osmantium"
+  },
+  "result": "randommod:radiant_osmantium",
+  "experience": 1.0,
+  "cookingtime": 200
+}

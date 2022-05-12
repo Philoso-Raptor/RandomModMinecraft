@@ -15,6 +15,7 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.raptorratmod.randommod.block.entity.DarkSplinterBlockEntity;
 import net.raptorratmod.randommod.block.entity.ModBlockEntities;
@@ -32,11 +33,21 @@ public class DarkSplinter extends BlockWithEntity implements BlockEntityProvider
         super(settings);
     }
 
+    public void setDefaultBlockState(Direction direction){
+
+    }
+
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx){
-        return this.getDefaultState().with(FACING,
-                ctx.getPlayerLookDirection().getOpposite());
+        if (ctx.getPlayerLookDirection() == Direction.DOWN){
+            return this.getDefaultState().with(FACING, Direction.NORTH);
+        }else if(ctx.getPlayerLookDirection() == Direction.UP){
+            return this.getDefaultState().with(FACING, Direction.NORTH);
+        }else {
+            return this.getDefaultState().with(FACING,
+                    ctx.getPlayerLookDirection().getOpposite());
+        }
     }
 
     @Override

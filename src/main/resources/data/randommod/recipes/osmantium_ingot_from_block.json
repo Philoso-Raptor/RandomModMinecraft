@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+     {
+      "item": "randommod:osmantium_nugget"
+    }
+  ],
+  "result": {
+    "item": "randommod:osmantium_ingot",
+    "count": 9
+  }
+}
