@@ -37,9 +37,9 @@ public class ModItems {
     public static final Item RADIANT_OSMANTIUM = registerItem("radiant_osmantium"
             ,new Item(new FabricItemSettings().fireproof().group(ItemGroup.MISC)));
 
-    public static final Item RADIANT_OSMANTIUM_SWORD = registerItem("radiant_osmantium_sword"
-            ,new SwordItem(ModToolMaterials.RADIANT_OSMANTIUM, 2, 2f, new FabricItemSettings
-                    ().fireproof().maxCount(1)));
+    //public static final Item RADIANT_OSMANTIUM_SWORD = registerItem("radiant_osmantium_sword"
+            //,new SwordItem(ModToolMaterials.RADIANT_OSMANTIUM, 2, 2f, new FabricItemSettings
+                    //().fireproof().maxCount(1)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(RandomMod.MOD_ID, name), item);
