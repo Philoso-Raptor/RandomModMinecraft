@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "randommod:item/radiant_osmantium_sword"
+  }
+}

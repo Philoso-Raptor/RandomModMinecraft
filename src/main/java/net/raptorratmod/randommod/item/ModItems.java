@@ -8,6 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.raptorratmod.randommod.RandomMod;
 import net.raptorratmod.randommod.entity.ModEntities;
+import net.raptorratmod.randommod.item.custom.ModBleedingSwordItem;
 
 public class ModItems {
 
@@ -28,8 +29,8 @@ public class ModItems {
                     new FabricItemSettings().group(ItemGroup.MISC).maxCount(1)));
 
     public static final Item OSMANTIUM_SWORD = registerItem("osmantium_sword"
-            ,new SwordItem(ModToolMaterials.OSMANTIUM, 1, 2f, new FabricItemSettings
-                    ().fireproof().maxCount(1)));
+            ,new SwordItem(ModToolMaterials.OSMANTIUM, 1, 0.5f, new FabricItemSettings
+                    ().fireproof().maxCount(1).group(ItemGroup.COMBAT)));
 
     public static final Item DENSE_OSMANTIUM = registerItem("dense_osmantium"
             ,new Item(new FabricItemSettings().fireproof().group(ItemGroup.MISC)));
@@ -37,9 +38,9 @@ public class ModItems {
     public static final Item RADIANT_OSMANTIUM = registerItem("radiant_osmantium"
             ,new Item(new FabricItemSettings().fireproof().group(ItemGroup.MISC)));
 
-    //public static final Item RADIANT_OSMANTIUM_SWORD = registerItem("radiant_osmantium_sword"
-            //,new SwordItem(ModToolMaterials.RADIANT_OSMANTIUM, 2, 2f, new FabricItemSettings
-                    //().fireproof().maxCount(1)));
+    public static final Item RADIANT_OSMANTIUM_SWORD = registerItem("radiant_osmantium_sword"
+            ,new ModBleedingSwordItem(ModToolMaterials.RADIANT_OSMANTIUM, 2, 0.55f, new FabricItemSettings
+                    ().fireproof().maxCount(1).group(ItemGroup.COMBAT)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(RandomMod.MOD_ID, name), item);
